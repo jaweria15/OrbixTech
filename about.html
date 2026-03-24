@@ -6,148 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Orbix Tech</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .about-card {
-            background: rgba(53, 74, 106, 0.4);
-            border: 1px solid var(--glass-border);
-            border-radius: var(--radius-xl);
-            padding: 40px;
-            box-shadow: var(--shadow-lg);
-            margin-bottom: 40px;
-        }
-        .text-lead { font-size: 1.15rem; line-height: 1.8; color: var(--text-muted); }
-        .ceo-block { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
-        .ceo-image { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary); }
-    </style>
 </head>
 
-<body>
-    <div id="vanta-bg" style="position: fixed; z-index: -2; top: 0; left: 0; width: 100%; height: 100%;"></div>
-
+<body class="dark-theme">
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="Orbex Technology" style="height: 45px;">
+                <img src="assets/images/logo1.png" alt="Orbex Technology Logo" onerror="this.src='assets/images/logo.png'">
             </a>
-            <ul class="nav-links" id="nav-links" style="display: flex; align-items: center; gap: 30px;">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="about.html" class="nav-link" style="color: #fff; border-bottom: 2px solid var(--primary);">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="products.html" class="nav-link">Products</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
         </div>
     </nav>
 
-    <div style="height: 120px;"></div>
+    <!-- Side Sticky Talk Business Button -->
+    <a href="contact.html" class="sticky-talk">Let's Talk Business</a>
 
-    <div class="container">
-        <!-- About Us -->
-        <div class="about-card" data-aos="fade-up">
-            <span class="subtitle" style="display:block; margin-bottom: 10px;">ABOUT US</span>
-            <h2 style="font-size: 2.5rem; margin-bottom: 25px;">Orbex Technology</h2>
-            <p class="text-lead" style="margin-bottom: 20px;">Orbex Technology is a fast-growing technology startup committed to transforming ideas into powerful digital solutions. Founded with a vision to simplify and modernize business operations, we specialize in custom ERP systems, CRM platforms, e-commerce development, automation tools, and QR & barcode ecosystems tailored to the evolving needs of startups and enterprises.</p>
-            <p class="text-lead" style="margin-bottom: 20px;">As we understand the challenges of building, scaling, and competing in today’s digital landscape. That’s why we focus on creating intelligent, scalable, and cost-effective systems that streamline operations, enhance productivity, and unlock new growth opportunities. From software architecture and cloud solutions to marketing strategy and creative branding, we deliver integrated digital ecosystems that help businesses operate smarter and grow faster.</p>
-            <p class="text-lead">At Orbex Technology, innovation is at the core of everything we do. We combine advanced technology, AI-driven automation, and data driven strategies to build future-ready solutions that evolve with businesses. Our mission is simple: to empower organizations with reliable technology, strategic insight, and digital tools that drive sustainable, long-term success.</p>
-        </div>
-
-        <!-- Vision & Mission -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-            <div class="about-card" data-aos="fade-right">
-                <span class="subtitle">OUR VISION</span>
-                <p class="text-lead" style="margin-top: 15px;">To become a trusted technology partner that empowers businesses through innovative, scalable, and intelligent digital solutions, enabling them to operate efficiently and compete confidently in a rapidly evolving digital world.</p>
-            </div>
-            
-            <div class="about-card" data-aos="fade-left">
-                <span class="subtitle">OUR MISSION</span>
-                <p class="text-lead" style="margin-top: 15px;">Our mission is to design and deliver reliable software, automation, and digital ecosystems that simplify business operations and drive sustainable growth. We are committed to combining advanced technology, strategic insight, and a client-focused approach to create practical, future-ready solutions that add measurable value for our clients.</p>
+    <!-- Page Header Background -->
+    <section class="section bg-darker" style="padding-top: 150px; padding-bottom: 50px; position: relative; overflow: hidden;">
+        <div style="position: absolute; border-radius: 50%; top: -50px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(125, 139, 158, 0.15) 0%, transparent 70%); z-index: 1; filter: blur(40px);"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="sub-heading" style="color: var(--primary); letter-spacing: 2px;">ABOUT US</span>
+                <h2 style="font-size: 3.5rem; margin-bottom: 20px;">Orbex Technology</h2>
+                <p class="subtitle mx-auto" style="max-width: 800px; font-size: 1.15rem; color: var(--text-muted); line-height: 1.8;">
+                    Orbex Technology is a fast-growing technology startup committed to transforming ideas into powerful digital solutions. Founded with a vision to simplify and modernize business operations.
+                </p>
             </div>
         </div>
+    </section>
 
-        <!-- CEO Message -->
-        <div class="about-card" data-aos="zoom-in" data-aos-delay="200">
-            <span class="subtitle">Ceo Message</span>
-            <h2 style="margin-bottom: 30px;">Welcome to Orbex Technology.</h2>
-            
-            <div class="ceo-block">
-                <div>
-                    <!-- Optional: Add Real CEO Image -->
-                    <div style="width: 150px; height: 150px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; border: 3px solid #00f0ff;">
-                        <i class="fas fa-user-tie" style="font-size: 4rem; color: #fff;"></i>
+    <!-- Full Story Details -->
+    <section class="section bg-dark" style="padding-top: 50px;">
+        <div class="container">
+            <div class="about-modern-grid">
+                <!-- Image Side -->
+                <div class="about-image-wrapper" data-aos="fade-right">
+                    <div class="about-image">
+                        <div class="about-image-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop&q=80" alt="About Orbex">
+                        <div class="about-badge">
+                            <h3 style="color: #fff; font-size: 2.2rem; font-family: 'Outfit', sans-serif; line-height: 1; margin: 0;">10+</h3>
+                            <p style="color: var(--color-5); font-weight: 500; font-size: 1rem; margin: 5px 0 0 0;">Years of Team Expertise</p>
+                        </div>
                     </div>
                 </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <p class="text-lead" style="font-style: italic; margin-bottom: 20px;">"At Orbex Technology, we are focused on delivering practical, scalable, and high-quality technology solutions that help businesses operate efficiently and adapt to an evolving digital environment. Our approach is driven by innovation, precision and a strong commitment to client success."</p>
-                    <p class="text-lead" style="margin-bottom: 20px;">Our strength lies in our people, a dedicated team of professionals who bring expertise, accountability, and a results-oriented mindset to every project. We take pride in delivering value through thoughtful execution, consistent quality and long-term partnerships built on trust.</p>
-                    <p class="text-lead" style="margin-bottom: 20px;">As we continue to grow, our objective remains clear: to empower organizations with robust technology, strategic insight, and future-ready digital solutions that enable sustainable success.</p>
-                    <h4 style="color: #00f0ff; font-family: 'Outfit', sans-serif;">Muhammad Waris Karim</h4>
-                    <span style="color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Founder & CEO</span>
+
+                <!-- Text Side -->
+                <div class="about-content-modern" data-aos="fade-left" data-aos-delay="100">
+                    <h2 style="font-size: 2.5rem; color: #fff; line-height: 1.2; margin-bottom: 30px;">Driving sustainable <span class="gradient-text">long-term success</span></h2>
+                    
+                    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.7; margin-bottom: 20px; opacity: 0.9;">As we understand the challenges of building, scaling, and competing in today’s digital landscape. That’s why we focus on creating intelligent, scalable, and cost-effective systems that streamline operations, enhance productivity, and unlock new growth opportunities.</p>
+                    
+                    <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 30px;">From software architecture and cloud solutions to marketing strategy and creative branding, we deliver integrated digital ecosystems that help businesses operate smarter and grow faster. We combine advanced technology, AI-driven automation, and data driven strategies to build future-ready solutions that evolve with businesses.</p>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="about-cards-row" style="margin-top: 100px;">
+                <div class="hover-glass-card" data-aos="fade-up">
+                    <i class="fa-solid fa-eye" style="color: var(--primary); font-size: 2rem; margin-bottom: 15px;"></i>
+                    <h4 style="color: #fff; font-size: 1.5rem; margin-bottom: 15px; font-family: 'Outfit', sans-serif;">Our Vision</h4>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin: 0;">To become a trusted technology partner that empowers businesses through innovative, scalable, and intelligent digital solutions, enabling them to operate efficiently and compete confidently in a rapidly evolving digital world.</p>
+                </div>
+                
+                <div class="hover-glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-bullseye" style="color: var(--primary); font-size: 2rem; margin-bottom: 15px;"></i>
+                    <h4 style="color: #fff; font-size: 1.5rem; margin-bottom: 15px; font-family: 'Outfit', sans-serif;">Our Mission</h4>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin: 0;">Our mission is to design and deliver reliable software, automation, and digital ecosystems that simplify business operations and drive sustainable growth. We add measurable value by combining advanced tech with strategic insight.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- How We Work -->
-        <div class="about-card" data-aos="fade-up" style="margin-bottom: 100px;">
-            <span class="subtitle">How We Work</span>
-            <h2 style="margin-bottom: 25px;">Our Process</h2>
-            <p class="text-lead" style="margin-bottom: 30px;">At Orbex Technology, we follow a structured yet flexible approach to deliver reliable and high-impact digital solutions.</p>
-            
-            <ul style="list-style: none;">
-                <li style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;" data-aos="fade-right" data-aos-delay="100">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,240,255,0.1); color: #00f0ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid #00f0ff;"><i class="fas fa-search"></i></div>
-                    <p class="text-lead">We begin by understanding business objectives, operational challenges, and technical requirements to define a clear project scope and success criteria.</p>
-                </li>
-                <li style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;" data-aos="fade-right" data-aos-delay="200">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,240,255,0.1); color: #00f0ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid #00f0ff;"><i class="fas fa-drafting-compass"></i></div>
-                    <p class="text-lead">Our team designs a tailored technology roadmap, selecting the right tools, architecture, and integrations to ensure scalability and efficiency.</p>
-                </li>
-                <li style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;" data-aos="fade-right" data-aos-delay="300">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,240,255,0.1); color: #00f0ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid #00f0ff;"><i class="fas fa-laptop-code"></i></div>
-                    <p class="text-lead">We develop secure, high-performance solutions using modern technologies, with a strong focus on usability, reliability, and system integrity.</p>
-                </li>
-                <li style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;" data-aos="fade-right" data-aos-delay="400">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,240,255,0.1); color: #00f0ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid #00f0ff;"><i class="fas fa-shield-alt"></i></div>
-                    <p class="text-lead">Every solution undergoes thorough testing to ensure performance, security, and compliance with business requirements.</p>
-                </li>
-                <li style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;" data-aos="fade-right" data-aos-delay="500">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,240,255,0.1); color: #00f0ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid #00f0ff;"><i class="fas fa-rocket"></i></div>
-                    <p class="text-lead">We ensure smooth implementation, system integration, and minimal disruption to business operations.</p>
-                </li>
-                <li style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;" data-aos="fade-right" data-aos-delay="600">
-                    <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0,240,255,0.1); color: #00f0ff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid #00f0ff;"><i class="fas fa-headset"></i></div>
-                    <p class="text-lead">Post-deployment, we provide ongoing support, optimization, and enhancements to ensure long-term value and growth.</p>
-                </li>
-            </ul>
+    <!-- CEO Message -->
+    <section class="section bg-darker">
+        <div class="container">
+            <div class="hover-glass-card" data-aos="zoom-in" style="padding: 60px; border-radius: 24px;">
+                <div style="display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+                    <div style="flex-shrink: 0; text-align: center; margin: 0 auto;">
+                        <div style="width: 180px; height: 180px; border-radius: 50%; background: rgba(185, 192, 200, 0.1); display: flex; align-items: center; justify-content: center; border: 4px solid var(--primary); margin-bottom: 20px; box-shadow: 0 0 30px rgba(185, 192, 200, 0.2);">
+                            <i class="fa-solid fa-user-tie" style="font-size: 5rem; color: var(--primary);"></i>
+                        </div>
+                        <h4 style="color: #fff; font-family: 'Outfit', sans-serif; font-size: 1.5rem; margin-bottom: 5px;">Muhammad Waris Karim</h4>
+                        <span style="color: var(--primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Founder & CEO</span>
+                    </div>
+                    <div style="flex: 1; min-width: 300px;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 25px; color: #fff; font-family: 'Outfit', sans-serif;">Welcome to Orbex Technology.</h2>
+                        <p style="color: var(--text-light); font-size: 1.15rem; line-height: 1.8; font-style: italic; margin-bottom: 20px;">"At Orbex Technology, we are focused on delivering practical, scalable, and high-quality technology solutions that help businesses operate efficiently and adapt to an evolving digital environment. Our approach is driven by innovation, precision and a strong commitment to client success."</p>
+                        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px;">Our strength lies in our people, a dedicated team of professionals who bring expertise, accountability, and a results-oriented mindset to every project. We take pride in delivering value through thoughtful execution, consistent quality and long-term partnerships built on trust.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="sub-heading" style="color: var(--primary); letter-spacing: 2px;">HOW WE WORK</span>
+                <h2>Our Process</h2>
+                <p class="subtitle text-center mt-3" style="color: var(--text-muted);">At Orbex Technology, we follow a structured yet flexible approach to deliver reliable and high-impact digital solutions.</p>
+            </div>
+            
+            <div class="roadmap">
+                <div class="roadmap-item" data-aos="fade-up">
+                    <div class="roadmap-num">01</div>
+                    <div class="roadmap-desc">We begin by understanding business objectives, operational challenges, and technical requirements to define a clear project scope.</div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="roadmap-num">02</div>
+                    <div class="roadmap-desc">Our team designs a tailored technology roadmap, selecting the right tools, architecture, and integrations to ensure scalability.</div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="roadmap-num">03</div>
+                    <div class="roadmap-desc">We develop secure, high-performance solutions using modern technologies, with a strong focus on usability and system integrity.</div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-up">
+                    <div class="roadmap-num">04</div>
+                    <div class="roadmap-desc">Every solution undergoes thorough testing to ensure performance, security, and compliance with business requirements.</div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="roadmap-num">05</div>
+                    <div class="roadmap-desc">We ensure smooth implementation, system integration, and minimal disruption to business operations.</div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="roadmap-num">06</div>
+                    <div class="roadmap-desc">Post-deployment, we provide ongoing support, optimization, and enhancements to ensure long-term value and growth.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-darker">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="logo">
+                     <img src="assets/images/logo1.png" alt="Orbex Technology Logo" onerror="this.src='assets/images/logo.png'">
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2026 Orbex Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
-        VANTA.GLOBE({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x3f51b5,
-            color2: 0x00f0ff,
-            size: 1.10,
-            backgroundColor: 0x081221
-        });
     </script>
     <script src="js/script.js"></script>
 </body>
