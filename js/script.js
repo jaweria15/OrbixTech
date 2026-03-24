@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Mobile Menu ---
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
-    
+
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
@@ -63,23 +63,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const formStatus = document.getElementById('form-status');
 
     if (contactForm && formStatus) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             // Setup variables
             let submitBtn = contactForm.querySelector('button');
             let originalBtnText = submitBtn ? submitBtn.innerHTML : 'Send';
-            
+
             if (submitBtn) {
-                submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin right"></i>';
+                submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin ml-2"></i>';
                 submitBtn.disabled = true;
             }
 
-            // Mock submission
-            setTimeout(() => {
-                formStatus.innerHTML = '<span style="color: #4caf50;"><i class="fas fa-check-circle"></i> Message sent successfully! We will get back to you soon.</span>';
-                contactForm.reset();
+            // Web3Forms Integration (Free Email Service)
+            const formData = new FormData(contactForm);
 
+            // IMPORTANT: Get your free Access Key at https://web3forms.com using your email address
+            // Replace "YOUR_ACCESS_KEY_HERE" with that actual key.
+            formData.append("access_key", "405dbbac-c38f-4299-a1db-c174acaf4eb2");
+
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    formStatus.innerHTML = '<span style="color: #4caf50;"><i class="fas fa-check-circle"></i> Message sent successfully! We will get back to you soon.</span>';
+                    contactForm.reset();
+                } else {
+                    formStatus.innerHTML = '<span style="color: #f44336;"><i class="fas fa-exclamation-circle"></i> Error: ' + data.message + '</span>';
+                }
+            } catch (error) {
+                formStatus.innerHTML = '<span style="color: #f44336;"><i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please check your connection.</span>';
+            } finally {
                 if (submitBtn) {
                     submitBtn.innerHTML = originalBtnText;
                     submitBtn.disabled = false;
@@ -89,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     formStatus.innerHTML = '';
                 }, 5000);
-            }, 1500);
+            }
         });
     }
 
