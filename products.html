@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Orbix Tech</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="vanta-bg" style="position: fixed; z-index: -2; top: 0; left: 0; width: 100%; height: 100%;"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Orbex Technology" style="height: 45px;">
+            </a>
+            <ul class="nav-links" id="nav-links" style="display: flex; align-items: center; gap: 30px;">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects" style="margin-top: 100px;">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Our Portfolio</span>
+                <h2>Detailed Projects Overview</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" style="padding: 30px; display: flex; flex-direction: column; gap: 20px; background: rgba(53, 74, 106, 0.4); border: 1px solid var(--glass-border);">
+                    <img src="assets/images/project1.png" alt="Aether Analytics" style="border-radius: var(--radius-lg); width: 100%; height: auto; max-height: 250px; object-fit: cover;">
+                    <div class="project-content" style="padding: 0;">
+                        <h3 style="font-size: 1.8rem; color: var(--text-main);">Aether Analytics Dashboard</h3>
+                        <p style="color: var(--text-muted); margin-top: 10px; line-height: 1.6;">
+                            This comprehensive AI real-time dashboard enables enterprise clients to process over 5 million data points per second. It includes automated anomalous data detection, predictive forecasting, and interactive data visualization components tailored to financial data. Built on a robust big data pipeline processing framework.
+                        </p>
+                        <div class="tags" style="margin-top: 15px;">
+                            <span>Python</span>
+                            <span>React</span>
+                            <span>TensorFlow</span>
+                            <span>Kafka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" style="padding: 30px; display: flex; flex-direction: column; gap: 20px; background: rgba(53, 74, 106, 0.4); border: 1px solid var(--glass-border);">
+                    <img src="assets/images/project2.png" alt="NovaPay App" style="border-radius: var(--radius-lg); width: 100%; height: auto; max-height: 250px; object-fit: cover;">
+                    <div class="project-content" style="padding: 0;">
+                        <h3 style="font-size: 1.8rem; color: var(--text-main);">NovaPay Application</h3>
+                        <p style="color: var(--text-muted); margin-top: 10px; line-height: 1.6;">
+                            A highly secure, multi-currency mobile wallet designed to support modern users. Featuring an intuitive user interface, lightning-fast cross-border settlement functionalities utilizing blockchain technology, and AI-based fraud detection. Compliant with top tier financial security standards globally.
+                        </p>
+                        <div class="tags" style="margin-top: 15px;">
+                            <span>Flutter</span>
+                            <span>Golang</span>
+                            <span>AWS EC2</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300" style="padding: 30px; display: flex; flex-direction: column; gap: 20px; background: rgba(53, 74, 106, 0.4); border: 1px solid var(--glass-border);">
+                    <img src="assets/images/project1.png" alt="CloudSync" style="border-radius: var(--radius-lg); width: 100%; height: auto; max-height: 250px; object-fit: cover; filter: hue-rotate(90deg);">
+                    <div class="project-content" style="padding: 0;">
+                        <h3 style="font-size: 1.8rem; color: var(--text-main);">CloudSync Enterprise</h3>
+                        <p style="color: var(--text-muted); margin-top: 10px; line-height: 1.6;">
+                            An enterprise-grade cloud synchronization protocol handling document management. Provides role-based access control, file versioning, collaborative virtual spaces, and deep integration with leading ERP systems. Reduced client infrastructure costs by 35% on average.
+                        </p>
+                        <div class="tags" style="margin-top: 15px;">
+                            <span>Node.js</span>
+                            <span>Docker</span>
+                            <span>Vue.js</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3f51b5,
+            color2: 0x00f0ff,
+            size: 1.10,
+            backgroundColor: 0x081221
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

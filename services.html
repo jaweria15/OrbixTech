@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orbex Technology - Our Comprehensive Services">
+    <title>Our Services | Orbex Technology</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-page-hero {
+            padding: 180px 0 80px;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--bg-darker), var(--bg-dark));
+        }
+
+        .service-detail-block {
+            padding: 100px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .reverse-grid {
+            direction: rtl;
+        }
+
+        .reverse-grid>* {
+            direction: ltr;
+        }
+
+        .service-detail-img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-features {
+            margin-top: 30px;
+            list-style: none;
+        }
+
+        .service-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--text-muted);
+        }
+
+        .service-features li i {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 992px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-detail-img {
+                height: 300px;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo1.png" alt="Orbex Technology Logo">
+
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                <li><a href="index.html#how-we-work" class="nav-link">How We Work</a></li>
+                <li><a href="index.html#services" class="nav-link">Our Service</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary nav-contact-btn">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Sticky Talk Business Button -->
+    <a href="index.html#contact" class="sticky-talk">Let's Talk Business</a>
+
+    <!-- Page Header -->
+    <header class="service-page-hero">
+        <div class="container" data-aos="fade-up">
+            <span class="sub-heading">END-TO-END SOLUTIONS</span>
+            <h1 style="font-size: 4rem; line-height: 1.1; margin-bottom: 20px;" class="gradient-text">Our Comprehensive
+                Services</h1>
+            <p class="subtitle mx-auto">Deep dive into the specialized digital ecosystems we build to streamline
+                operations, enhance efficiency, and unlock sustainable business growth.</p>
+        </div>
+    </header>
+
+    <!-- Details Sections -->
+    <main>
+        <!-- Software Solutions -->
+        <section id="software-solutions" class="service-detail-block bg-dark">
+            <div class="container service-detail-grid">
+                <div data-aos="fade-right">
+                    <span class="sub-heading">01 &mdash; Systems & Architecture</span>
+                    <h2>Software & Tech Solutions</h2>
+                    <p class="mt-3 text-muted" style="font-size: 1.1rem; line-height: 1.6;">We architect, scale, and
+                        secure enterprise-grade systems capable of transforming outdated operations into automated,
+                        extremely resilient digital powerhouses.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-code"></i> Custom ERP systems (modular and scalable)</li>
+                        <li><i class="fa-solid fa-code"></i> CRM solutions and business process automation</li>
+                        <li><i class="fa-solid fa-code"></i> Inventory, warehouse, and asset management systems</li>
+                        <li><i class="fa-solid fa-code"></i> POS and distribution management systems</li>
+                        <li><i class="fa-solid fa-code"></i> Business intelligence and reporting dashboards</li>
+                        <li><i class="fa-solid fa-code"></i> QR code and barcode ecosystems & RFID automation</li>
+                        <li><i class="fa-solid fa-code"></i> Cloud infrastructure and DevOps solutions</li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=80"
+                        alt="Software Solutions" class="service-detail-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Services -->
+        <section id="advanced-services" class="service-detail-block bg-darker">
+            <div class="container service-detail-grid reverse-grid">
+                <div data-aos="fade-left">
+                    <span class="sub-heading">02 &mdash; AI & Next-Gen Tech</span>
+                    <h2>Advanced Services</h2>
+                    <p class="mt-3 text-muted" style="font-size: 1.1rem; line-height: 1.6;">Stay ahead of the
+                        competition with future-ready AI products, deep-tech consultancy, and bleeding-edge automation
+                        workflows.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-microchip"></i> SaaS product development</li>
+                        <li><i class="fa-solid fa-microchip"></i> AI-powered chatbots and automation</li>
+                        <li><i class="fa-solid fa-microchip"></i> AI-driven content creation</li>
+                        <li><i class="fa-solid fa-microchip"></i> Business and technology consultancy</li>
+                        <li><i class="fa-solid fa-microchip"></i> Ads arbitrage and performance optimization</li>
+                    </ul>
+                </div>
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80"
+                        alt="Advanced Services" class="service-detail-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- E-Commerce -->
+        <section id="ecommerce" class="service-detail-block bg-dark">
+            <div class="container service-detail-grid">
+                <div data-aos="fade-right">
+                    <span class="sub-heading">03 &mdash; Retail & Web</span>
+                    <h2>E-Commerce & Web</h2>
+                    <p class="mt-3 text-muted" style="font-size: 1.1rem; line-height: 1.6;">Deploy hyper-optimized,
+                        high-converting digital storefronts and web portals seamlessly spanning desktop and mobile
+                        platforms.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-cart-shopping"></i> Corporate and business websites</li>
+                        <li><i class="fa-solid fa-cart-shopping"></i> E-commerce store development (Shopify,
+                            WooCommerce, custom)</li>
+                        <li><i class="fa-solid fa-cart-shopping"></i> Marketplace and multi-vendor platform development
+                        </li>
+                        <li><i class="fa-solid fa-cart-shopping"></i> B2B and B2C web portals</li>
+                        <li><i class="fa-solid fa-cart-shopping"></i> E-commerce mobile applications</li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=800&auto=format&fit=crop&q=80"
+                        alt="E-Commerce & Web" class="service-detail-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing -->
+        <section id="marketing" class="service-detail-block bg-darker">
+            <div class="container service-detail-grid reverse-grid">
+                <div data-aos="fade-left">
+                    <span class="sub-heading">04 &mdash; Client Acquisition</span>
+                    <h2>Marketing & Growth</h2>
+                    <p class="mt-3 text-muted" style="font-size: 1.1rem; line-height: 1.6;">Amplify your presence and
+                        scale your user base rapidly with robust SEO, data-driven paid advertising, and viral marketing
+                        pipelines.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-bullseye"></i> Social media marketing and campaign management</li>
+                        <li><i class="fa-solid fa-bullseye"></i> Paid advertising (Google and Meta Ads)</li>
+                        <li><i class="fa-solid fa-bullseye"></i> Search engine optimization (SEO) and content marketing
+                        </li>
+                        <li><i class="fa-solid fa-bullseye"></i> Email marketing and automation</li>
+                        <li><i class="fa-solid fa-bullseye"></i> Influencer marketing and lead generation</li>
+                        <li><i class="fa-solid fa-bullseye"></i> WhatsApp API integration and customer engagement
+                            solutions</li>
+                    </ul>
+                </div>
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&auto=format&fit=crop&q=80"
+                        alt="Marketing & Growth" class="service-detail-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative -->
+        <section id="creative" class="service-detail-block bg-dark">
+            <div class="container service-detail-grid">
+                <div data-aos="fade-right">
+                    <span class="sub-heading">05 &mdash; Visuals & Identity</span>
+                    <h2>Creative & Branding</h2>
+                    <p class="mt-3 text-muted" style="font-size: 1.1rem; line-height: 1.6;">Distinguish your brand with
+                        deeply engaging visual experiences, professional 3D design, and award-winning UI/UX
+                        architectures.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-pen-nib"></i> UI/UX design and product experience design</li>
+                        <li><i class="fa-solid fa-pen-nib"></i> Brand identity and business stationery</li>
+                        <li><i class="fa-solid fa-pen-nib"></i> Digital marketing creatives and social media design</li>
+                        <li><i class="fa-solid fa-pen-nib"></i> 3D design, modeling, and visual content</li>
+                        <li><i class="fa-solid fa-pen-nib"></i> Video production and professional photography</li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=80"
+                        alt="Creative & Branding" class="service-detail-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-darker">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="logo">
+                    <img src="assets/images/logo1.png" alt="Orbex Technology Logo">
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2026 Orbex Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 50 });
+    </script>
+</body>
+
+</html>

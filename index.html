@@ -4,396 +4,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Orbix - Premium Software Development Company specializing in Web, Mobile, AI, and Cloud solutions.">
-    <title>Orbix | Innovation in Every Line of Code</title>
+    <meta name="description" content="Orbex Technology - Premium Software Development & Digital Solutions">
+    <title>Orbex Technology | Digital Solutions</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="light-mode">
-    <!-- Navigation -->
+<body class="dark-theme">
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="#home" class="logo">
-                <img src="assets/images/logo.png" alt="Orbex Technology">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo1.png" alt="Orbex Technology Logo">
+
             </a>
-
             <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#how-we-work" class="nav-link">How We Work</a></li>
+                <li><a href="#services" class="nav-link">Our Service</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-contact-btn">Contact Us</a></li>
             </ul>
-
             <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Side Sticky Talk Business Button -->
+    <a href="#contact" class="sticky-talk">Let's Talk Business</a>
+
+    <!-- Hero -->
     <section class="hero" id="home">
-        <div class="hero-bg">
-            <!-- <img src="assets/images/hero.png" alt="Hero Background"> -->
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="assets/images/hero.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="container hero-content">
-            <div class="reveal">
-                <span class="badge">Next-Gen Tech Partner</span>
-                <h1>Crafting the Future of <span class="text-gradient">Digital Intelligence</span></h1>
-                <p>We transform your ambitious ideas into scalable, high-performance software solutions. From AI-driven
-                    analytics to seamless cloud migrations, we build what matters.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View Our Work</a>
-                    <a href="#contact" class="btn btn-outline">Start a Project</a>
+        <!-- Guaranteed working video placeholder or use static fallback -->
+        <video autoplay loop muted playsinline class="hero-bg-video">
+            <!-- Using a classic reliable free CDN video related to tech/typing -->
+            <source src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4" type="video/mp4">
+            <!-- Fallback video if the above is blocked -->
+            <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="container relative z-10 hero-wrapper">
+            <div class="hero-content text-left" data-aos="fade-up">
+                <div class="badge-container">
+                    <span class="badge">Innovation at its core</span>
+                </div>
+                <h1 class="hero-title">Empowering Organizations <br> With <span class="gradient-text text-glow">Reliable
+                        Technology</span></h1>
+                <p class="hero-subtitle">We deliver integrated digital ecosystems that help businesses operate smarter
+                    and grow faster. From custom ERP systems to AI-driven automation.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary glow-button">Start a Project</a>
+                    <a href="#services" class="btn btn-outline">Explore Services</a>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
+
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about section" id="about">
+    <!-- About Us Modern Layout -->
+    <section class="section about-section bg-dark" id="about">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="subtitle">Who We Are</span>
-                <h2>Pioneering the Digital Frontier</h2>
-                <div class="underline"></div>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-text reveal">
-                    <p>At Orbex Technology, we are
-                        focused on delivering practical,
-                        scalable, and high-quality technology
-                        solutions that help businesses operate
-                        efficiently and adapt to an evolving
-                        digital environment. Our approach is
-                        driven by innovation, precision and a
-                        strong commitment to client success..
-                        Muhammad Waris Karim
-                        Our strength lies in our people, a dedicated team of professionals who
-                        bring expertise, accountability, and a results-oriented mindset to every
-                        project. We take pride in delivering value through thoughtful execution,
-                        consistent quality and long-term partnerships built on trust.
-                        As we continue to grow, our objective remains clear: to empower
-                        organizations with robust technology, strategic insight, and future-ready
-                        digital solutions that enable sustainable success.</p>
-
-                    <div class="mission-vision">
-                        <div class="mv-card">
-                            <div class="icon-box"><i class="fas fa-bullseye"></i></div>
-                            <h3>Our Mission</h3>
-                            <p>Our mission is to design and deliver reliable software, automation,
-                                and digital ecosystems that simplify business operations and drive
-                                sustainable growth. We are committed to combining advanced
-                                technology, strategic insight, and a client-focused approach to
-                                create practical, future-ready solutions that add measurable value
-                                for our clients.</p>
-                        </div>
-                        <div class="mv-card">
-                            <div class="icon-box"><i class="fas fa-eye"></i></div>
-                            <h3>Our Vision</h3>
-                            <p>To become a trusted technology partner that empowers businesses
-                                through innovative, scalable, and intelligent digital solutions,
-                                enabling them to operate efficiently and compete confidently in a
-                                rapidly evolving digital world.</p>
+            <div class="about-modern-grid">
+                <!-- Image Side -->
+                <div class="about-image-wrapper" data-aos="fade-right">
+                    <div class="about-image">
+                        <div class="about-image-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop&q=80" alt="About Orbex">
+                        <div class="about-badge">
+                            <h3 style="color: #fff; font-size: 2.2rem; font-family: 'Outfit', sans-serif; line-height: 1; margin: 0;">10+</h3>
+                            <p style="color: var(--color-5); font-weight: 500; font-size: 1rem; margin: 5px 0 0 0;">Years of Team Expertise</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="team-showcase reveal">
-                    <div class="team-grid">
-                        <div class="team-card">
-                            <div class="team-img">
-                                <img src="assets/images/team1.png" alt="Sarah J.">
-                            </div>
-                            <div class="team-info">
-                                <h4>Muhammad Waris Karim</h4>
-                                <span>Founder & CEO</span>
-                            </div>
+                <!-- Content Side -->
+                <div class="about-content-modern" data-aos="fade-left" data-aos-delay="100">
+                    <span class="sub-heading" style="color: var(--primary); letter-spacing: 2px;">GET TO KNOW US</span>
+                    <h2>Transforming ideas into <br><span class="gradient-text">powerful solutions</span></h2>
+                    
+                    <p style="color: var(--text-light); font-size: 1.15rem; line-height: 1.7; margin-bottom: 30px; opacity: 0.9;">Founded with a vision to simplify and modernize business operations, we specialize in custom ERP systems, CRM platforms, e-commerce development, automation tools, and QR & barcode ecosystems.</p>
+                    
+                    <div class="about-cards-row">
+                        <!-- Card 1 -->
+                        <div class="hover-glass-card">
+                            <i class="fa-solid fa-lightbulb" style="color: var(--primary); font-size: 1.8rem; margin-bottom: 15px;"></i>
+                            <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">Intelligent Design</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin: 0;">Creating scalable, cost-effective systems that streamline overall operations.</p>
                         </div>
-
+                        
+                        <!-- Card 2 -->
+                        <div class="hover-glass-card">
+                            <i class="fa-solid fa-rocket" style="color: var(--primary); font-size: 1.8rem; margin-bottom: 15px;"></i>
+                            <h4 style="color: #fff; font-size: 1.2rem; margin-bottom: 10px;">Future-Ready</h4>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin: 0;">Combining AI-driven automation and data-driven strategies for long-term growth.</p>
+                        </div>
                     </div>
+                    
+                    <a href="about.html" class="btn btn-primary glow-button" style="text-transform: none; border-radius: 30px; font-weight: 600;">More About Us <i class="fa-solid fa-arrow-right ml-2"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services section bg-alt" id="services">
+    <!-- How We Work -->
+    <section class="section workflow-section bg-darker" id="how-we-work">
         <div class="container">
-            <div class="section-header reveal">
-                <h2 class="subtitle">Our Services</h2>
-                <div class="underline px-3  "></div>
-
-                <p>At Orbex Technology, we provide end-to-end digital solutions designed to
-                    streamline operations, enhance efficiency, and support sustainable business
-                    growth.</p>
+            <div class="section-title text-center" data-aos="fade-up">
+                <span class="sub-heading">OUR PROCESS</span>
+                <h2>How We Work</h2>
+                <p class="subtitle text-center mt-3">At Orbex Technology, we follow a structured yet flexible approach
+                    to deliver reliable and high-impact digital solutions.</p>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
-                    <h3>SOFTWARE & TECHNOLOGY SOLUTIONS
-                    </h3>
-
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Custom ERP systems (modular and scalable)
-
-
-                        </li>
-                        <li><i class="fas fa-check"></i> CRM solutions and business process automation</li>
-                        <li><i class="fas fa-check"></i> Inventory, warehouse, and asset management systems</li>
-                        <li><i class="fas fa-check"></i> POS and distribution management systems</li>
-                        <li><i class="fas fa-check"></i> Business intelligence and reporting dashboards</li>
-                        <li><i class="fas fa-check"></i> QR code and barcode ecosystems</li>
-                        <li><i class="fas fa-check"></i> RFID-based automation and system integration</li>
-                        <li><i class="fas fa-check"></i> API and third-party integrations</li>
-                        <li><i class="fas fa-check"></i> Cloud infrastructure and DevOps solutions
-                        </li>
-                        <li><i class="fas fa-check"></i> Custom software development</li>
-                        <li><i class="fas fa-check"></i> Progressive Web Apps</li>
-                    </ul>
+            <div class="roadmap">
+                <div class="roadmap-item" data-aos="fade-up">
+                    <div class="roadmap-num">01</div>
+                    <div class="roadmap-desc">We begin by understanding business objectives, operational challenges, and
+                        technical requirements to define a clear project scope and success criteria.</div>
                 </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>ADVANCED & VALUE-ADDED SERVICES</h3>
-
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> SaaS product development
-                        </li>
-                        <li><i class="fas fa-check"></i> AI-powered chatbots and automation
-                        </li>
-                        <li><i class="fas fa-check"></i> AI-driven content creation
-                        </li>
-                        <li><i class="fas fa-check"></i> Business and technology consultancy
-                        </li>
-                        <li><i class="fas fa-check"></i> Ads arbitrage and performance optimization
-                        </li>
-
-
-                    </ul>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="roadmap-num">02</div>
+                    <div class="roadmap-desc">Our team designs a tailored technology roadmap, selecting the right tools,
+                        architecture, and integrations to ensure scalability and efficiency.</div>
                 </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-code "></i></div>
-                    <h3>E-COMMERCE & WEB DEVELOPMENT</h3>
-
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Corporate and business websites
-                        </li>
-                        <li><i class="fas fa-check"></i> E-commerce store development (Shopify, WooCommerce, custom)
-                        </li>
-                        <li><i class="fas fa-check"></i> B2B and B2C web portals
-
-                        </li>
-                        <li><i class="fas fa-check"></i> E-commerce mobile applications
-
-                        </li>
-                    </ul>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="roadmap-num">03</div>
+                    <div class="roadmap-desc">We develop secure, high-performance solutions using modern technologies,
+                        with a strong focus on usability, reliability, and system integrity.</div>
                 </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
-                    <h3>MARKETING & GROWTH SOLUTIONS
-                    </h3>
-
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> Social media marketing and campaign management
-                        </li>
-                        <li><i class="fas fa-check"></i> Paid advertising (Google and Meta Ads)
-                        </li>
-                        <li><i class="fas fa-check"></i> Search engine optimization (SEO) and content marketing
-
-                        </li>
-                        <li><i class="fas fa-check"></i>Email marketing and automation
-
-                        </li>
-                        <li><i class="fas fa-check"></i> Influencer marketing and lead generation
-
-                        </li>
-                        <li><i class="fas fa-check"></i> WhatsApp API integration and customer engagement solutions
-                        </li>
-
-
-
-                    </ul>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="roadmap-num">04</div>
+                    <div class="roadmap-desc">Every solution undergoes thorough testing to ensure performance, security,
+                        and compliance with business requirements.</div>
                 </div>
-
-                <div class="service-card reveal">
-                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
-                    <h3>CREATIVE & BRANDING</h3>
-
-                    <ul class="service-list">
-                        <li><i class="fas fa-check"></i> UI/UX design and product experience design
-                        </li>
-                        <li><i class="fas fa-check"></i> Brand identity and business stationery
-                        </li>
-                        <li><i class="fas fa-check"></i> Digital marketing creatives and social media design
-                        </li>
-                        <li><i class="fas fa-check"></i> 3D design, modeling, and visual content
-
-                        </li>
-                        <li><i class="fas fa-check"></i> Video production and professional photography
-
-                        </li>
-
-                    </ul>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="roadmap-num">05</div>
+                    <div class="roadmap-desc">We ensure smooth implementation, system integration, and minimal
+                        disruption to business operations.</div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="roadmap-num">06</div>
+                    <div class="roadmap-desc">Post-deployment, we provide ongoing support, optimization, and
+                        enhancements to ensure long-term value and growth.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects section" id="projects">
+    <!-- Our Service (Devsinc Image Card Style) -->
+    <section class="section services-section bg-light-soft" id="services">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="subtitle">Case Studies</span>
-                <h2>Our Recent Work</h2>
-                <div class="underline"></div>
+            <div class="section-title" data-aos="fade-up">
+                <span class="sub-heading highlight">OUR SERVICES</span>
+                <h2 class="text-dark">Transform Your Business</h2>
+            </div>
+            <p class="subtitle text-dark mb-5" data-aos="fade-up">At Orbex Technology, we provide end-to-end digital
+                solutions designed to streamline operations, enhance efficiency, and support sustainable business
+                growth.</p>
+
+            <div class="service-image-cards" id="servicesGrid">
+                <!-- S1 -->
+                <div class="img-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&auto=format&fit=crop&q=80"
+                        alt="Software Solutions">
+                    <div class="img-card-overlay"></div>
+                    <div class="img-card-content">
+                        <h3>Software & Tech Solutions</h3>
+                        <p>Custom ERP systems, CRM platforms, QR & RFID ecosystems, APIs, Cloud infrastructure.</p>
+                        <a href="services.html#software-solutions" class="read-more-link">Read More <i
+                                class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- S2 -->
+                <div class="img-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80"
+                        alt="Advanced Services">
+                    <div class="img-card-overlay"></div>
+                    <div class="img-card-content">
+                        <h3>Advanced Services</h3>
+                        <p>SaaS development, AI chatbots, AI-driven content, IT consultancy, Ads optimization.</p>
+                        <a href="services.html#advanced-services" class="read-more-link">Read More <i
+                                class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- S3 -->
+                <div class="img-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&auto=format&fit=crop&q=80"
+                        alt="E-Commerce">
+                    <div class="img-card-overlay"></div>
+                    <div class="img-card-content">
+                        <h3>E-Commerce & Web</h3>
+                        <p>Shopify/WooCommerce stores, corporate websites, multi-vendor platforms, B2B/B2C portals.</p>
+                        <a href="services.html#ecommerce" class="read-more-link">Read More <i
+                                class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- S4 -->
+                <div class="img-card hidden-service" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&auto=format&fit=crop&q=80"
+                        alt="Marketing">
+                    <div class="img-card-overlay"></div>
+                    <div class="img-card-content">
+                        <h3>Marketing & Growth</h3>
+                        <p>Social media campaigns, Meta/Google Ads, SEO, email automation, WhatsApp integration.</p>
+                        <a href="services.html#marketing" class="read-more-link">Read More <i
+                                class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- S5 -->
+                <div class="img-card hidden-service" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format&fit=crop&q=80"
+                        alt="Creative">
+                    <div class="img-card-overlay"></div>
+                    <div class="img-card-content">
+                        <h3>Creative & Branding</h3>
+                        <p>UI/UX design, brand identity, digital marketing creatives, 3D modeling, video production.</p>
+                        <a href="services.html#creative" class="read-more-link">Read More <i
+                                class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="projects-grid">
-                <div class="project-card reveal">
-                    <div class="project-img">
-                        <img src="assets/images/project1.png" alt="AI Analytics Dashboard">
-                        <div class="project-overlay">
-                            <a href="#" class="btn btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Aether Analytics</h3>
-                        <p>A real-time AI dashboard for processing millions of data points per second.</p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>React</span>
-                            <span>TensorFlow</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card reveal">
-                    <div class="project-img">
-                        <img src="assets/images/project2.png" alt="Fintech Mobile App">
-                        <div class="project-overlay">
-                            <a href="#" class="btn btn-sm">View Details</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>NovaPay</h3>
-                        <p>Secure, multi-currency wallet with instant cross-border settlement.</p>
-                        <div class="tags">
-                            <span>Flutter</span>
-                            <span>Go</span>
-                            <span>AWS</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center mt-5" id="viewMoreContainer" data-aos="fade-up">
+                <button id="viewMoreBtn" class="btn btn-view-more">View More Services <i
+                        class="fa-solid fa-arrow-down ml-2"></i></button>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials section bg-alt">
+    <!-- Contact -->
+    <section class="section contact-section bg-darker" id="contact">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="subtitle">Success Stories</span>
-                <h2>What Our Clients Say</h2>
-                <div class="underline"></div>
-            </div>
-
-            <div class="testimonial-slider reveal">
-                <div class="testimonial-card">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p>"Orbix redefined our internal operations. Their AI solutions saved us over 40 hours of manual
-                        data entry per week."</p>
-                    <div class="client-info">
-                        <strong>Marcus Thorne</strong>
-                        <span>Director, Global Logistics</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info reveal">
-                    <div class="section-header">
-                        <span class="subtitle">Get In Touch</span>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="section-title text-left">
+                        <span class="sub-heading">GET IN TOUCH</span>
                         <h2>Let's Build Something Great</h2>
                     </div>
-                    <p>Have a project in mind? We'd love to hear from you. Our team typically responds within 24 hours.
-                    </p>
+                    <p class="subtitle mb-5">Partner with Orbex Technology to turn your visionary ideas into impactful
+                        digital ecosystems.</p>
 
-                    <div class="contact-details">
-                        <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
                             <div>
-                                <span>Email us</span>
-                                <p>hello@Orbix.tech</p>
+                                <h5>Email</h5>
+                                <p>hello@orbextech.co</p>
                             </div>
                         </div>
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-block">
+                            <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
                             <div>
-                                <span>Visit us</span>
-                                <p>123 Tech Avenue, Silicon Valley, CA</p>
+                                <h5>Call Us</h5>
+                                <p>+123 456 7890</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="social-links-big">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <div class="info-block">
+                            <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Global operations, rooted in innovation</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contact-form-container reveal">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <div class="contact-form-wrap" data-aos="fade-left">
+                    <form id="contact-form" class="orbex-form">
+                        <div class="form-row">
+                            <div class="input-grp">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Name</label>
+                                <i class="fa-solid fa-user input-icon"></i>
+                            </div>
+                            <div class="input-grp">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Email Address</label>
+                                <i class="fa-solid fa-envelope input-icon"></i>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <div class="input-grp">
+                            <input type="text" id="subject" required placeholder=" ">
+                            <label for="subject">Subject / Purpose</label>
+                            <i class="fa-solid fa-tag input-icon"></i>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        <div class="input-grp">
+                            <textarea id="message" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <i class="fa-solid fa-comment-dots input-icon"></i>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."
-                                required></textarea>
+                        <button type="submit" class="btn btn-primary w-100 glow-button">Send Message <i
+                                class="fa-solid fa-paper-plane ml-2"></i></button>
+                        
+                        <!-- Redirect Option to Contact Page -->
+                        <div class="text-center mt-3" style="margin-top: 15px;">
+                            <a href="contact.html" class="btn btn-outline w-100">Go to Full Contact Page <i class="fa-solid fa-arrow-right ml-2"></i></a>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
                         <div id="form-status" class="form-status"></div>
                     </form>
                 </div>
@@ -402,60 +321,29 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer bg-dark">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col brand">
-                    <a href="#home" class="logo">
-                        <img src="assets/images/logo.png" alt="Orbex Technology">
-                    </a>
-                    <p>Driving innovation through cutting-edge software development and design.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Web Dev</a></li>
-                        <li><a href="#">Mobile Apps</a></li>
-                        <li><a href="#">AI Solutions</a></li>
-                        <li><a href="#">UI/UX</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Social</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Orbix. All rights reserved.</p>
+                <div class="logo">
+                    <img src="assets/images/logo1.png" alt="Orbex Technology Logo">
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2026 Orbex Technology. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
-<<<<<<< HEAD
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        (function () {
-            emailjs.init("_fjCctgUPuAjqaayo");
-        })();
+        AOS.init({ duration: 800, once: true, offset: 100 });
     </script>
-=======
->>>>>>> bf3193e6098139314cb3f7c8e7ac97a7711d3abc
 </body>
 
 </html>
